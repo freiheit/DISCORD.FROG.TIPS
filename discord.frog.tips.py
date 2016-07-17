@@ -28,7 +28,7 @@ def get_cache_dir(app_name='frogsay'):
     return os.path.join(click.get_app_dir(app_name), 'croak_cache')
 
 
-description = '''frog tips'''
+description = '''PLEASE READ THE FROG MANUAL AS OUR DOCUMENTATION WRITER HAS PUT HUNDREDS OF HOURS OF WORK INTO IT.'''
 bot = commands.Bot(command_prefix='!', description=description)
 
 @bot.event
@@ -42,6 +42,7 @@ def on_ready():
 @bot.group(pass_context=True)
 @asyncio.coroutine
 def tip(ctx):
+    """DO NOT GIVE AWAY FROG. FROG IS NOT A GIFT."""
     with open_client(cache_dir=get_cache_dir()) as client:
         tip = client.frog_tip()
     yield from bot.say(tip)
@@ -49,6 +50,12 @@ def tip(ctx):
 @bot.group(pass_context=True)
 @asyncio.coroutine
 def fresco(ctx):
+    """        FROG UNDER PRESSURE.  POINT AWAY FROM FACE WHILE OPENING.
+        /
+  @..@
+ (----)
+( >__< )
+^^ ~~ ^^"""
     with open_client(cache_dir=get_cache_dir()) as client:
         tip = client.frog_tip()
     terminal_width = 60
