@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+# Here's the link to get my instance of this bot onto your server.
+# Replace the client_id with your own client_id to construct the URL for your bot.
 # https://discordapp.com/oauth2/authorize?&client_id=203243007317639168&scope=bot&permissions=3072
 
 import configparser
@@ -43,6 +45,7 @@ def on_ready():
 @asyncio.coroutine
 def tip(ctx):
     """DO NOT GIVE AWAY FROG. FROG IS NOT A GIFT."""
+    yield from bot.type()
     with open_client(cache_dir=get_cache_dir()) as client:
         tip = client.frog_tip()
     yield from bot.say(tip)
@@ -56,6 +59,7 @@ def fresco(ctx):
  (----)
 ( >__< )
 ^^ ~~ ^^"""
+    yield from bot.type()
     with open_client(cache_dir=get_cache_dir()) as client:
         tip = client.frog_tip()
     terminal_width = 60
