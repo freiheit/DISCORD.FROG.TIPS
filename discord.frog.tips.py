@@ -32,7 +32,7 @@ def get_cache_dir(app_name='frogsay'):
 
 description = '''PLEASE READ THE FROG MANUAL AS OUR DOCUMENTATION WRITER HAS PUT HUNDREDS OF HOURS OF WORK INTO IT.
 TO INFEST SERVER WITH FROG TIPS: https://discordapp.com/oauth2/authorize?&client_id=203243007317639168&scope=bot&permissions=3072'''
-bot = commands.Bot(command_prefix='!', description=description)
+bot = commands.Bot(command_prefix=commands.when_mentioned_or('!'), description=description)
 
 @bot.event
 @asyncio.coroutine
