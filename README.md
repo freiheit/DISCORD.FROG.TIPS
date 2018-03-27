@@ -11,3 +11,8 @@ SEE ALSO:
 - https://frog.tips/
 - https://github.com/FROG-TIPS
 - https://twitter.com/frogtips
+
+## Support on Beerpay
+Hey dude! Help me out for a couple of :beers:!
+
+[![Beerpay](https://beerpay.io/freiheit/DISCORD.FROG.TIPS/badge.svg?style=beer-square)](https://beerpay.io/freiheit/DISCORD.FROG.TIPS)  [![Beerpay](https://beerpay.io/freiheit/DISCORD.FROG.TIPS/make-wish.svg?style=flat-square)](https://beerpay.io/freiheit/DISCORD.FROG.TIPS?focus=wish)
